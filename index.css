@@ -1,0 +1,10 @@
+*{
+    padding:0px;
+    margin: 0px 0px;
+ }
+
+ /* for mobile */
+@media screen and (max-width: 480px)
+{
+    
+}
