@@ -27,10 +27,15 @@ if(sc==0)
            x.style.background="#f6f4f4";
            x.style.transition="0.8s";
     });
-    s2.style.background="white";
+    if(window.innerWidth <= 480)
+    {
+        s2.style.background="#f6f4f4";
+        s2.style.transition="0.8s";
+    }
+    
 
     s0.style.transition="0.8s";
-    s2.style.transition="0.8s";
+    
     
    
     sc=1;
@@ -40,7 +45,12 @@ else{
     s1.forEach(x=>{
         x.style.background="black";
  });
- s2.style.background="#2b2a2a";
+ if(window.innerWidth <= 480)
+    {
+        s2.style.background="#2b2a2a";
+        s2.style.transition="0.8s";
+    }
+ 
     sc=0;
 }
 }
