@@ -80,6 +80,15 @@ section{
         border: none;
     }
 
+    #home{
+        background-image: none;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 8% 6% 23% 10%;
+       
+    }
+   
+
     #sun{
         width: calc(4.5vh + 4.5vw);
         height: calc(4.5vh + 4.5vw);
@@ -114,6 +123,50 @@ section{
         height: 100vh;
         width: 100vw;
         
+    }
+
+    /* home content */
+    .homep{
+        height: calc(20vh + 20vw);
+        width: calc(20vh + 20vw);
+        border-radius: 50%;
+        margin: 10vh auto;
+        border: 1px solid silver;
+    }
+
+    .n1, .n2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: calc(2.8vh + 2.8vw);
+        font-weight: 900;
+    }
+
+    .n1{
+        color: rgb(255, 174, 0);
+        margin-top: 1vh;
+    }
+    .n2{
+        color: aliceblue;
+      
+    }
+    .des1{
+        color: azure;
+        margin:2vh auto;
+        width: 80%;
+        text-align: justify;
+    }
+    #home button{
+        width: 60%;
+        height: 80%;
+        font-size: 1.2em;
+        padding: calc(1vh + 1vw);
+        margin: 2vh auto;
+        border-radius: 30px;
+        background:none;
+        border: 1px solid gold;
+        color: azure;
     }
 }
 

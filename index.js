@@ -8,6 +8,7 @@ let proj=document.getElementById("proj");
 let cont=document.getElementById("cont");
 
 let slide=[home,about,proj,cont];
+let slides=["grid","block","block","block"];
 
 let t1=document.getElementById("t1");
 let t2=document.getElementById("t2");
@@ -26,12 +27,20 @@ if(sc==0)
     s1.forEach(x=>{
            x.style.background="#f6f4f4";
            x.style.transition="0.8s";
+           if(window.innerWidth > 480)
+            {
+                home.style.backgroundImage="linear-gradient(105deg,rgb(30, 89, 251) 20%, #f6f4f4 20%)";
+                home.style.transition="0.8s";
+            }
+
     });
     if(window.innerWidth <= 480)
     {
         s2.style.background="#f6f4f4";
+        
         s2.style.transition="0.8s";
     }
+  
     
 
     s0.style.transition="0.8s";
@@ -44,11 +53,20 @@ else{
     s0.style.background="rgb(85, 86, 86)";
     s1.forEach(x=>{
         x.style.background="black";
+        if(window.innerWidth > 480)
+            {
+                home.style.backgroundImage="linear-gradient(105deg,rgb(30, 89, 251) 20%, #111 20%)";
+                home.style.transition="0.8s";
+            }
  });
  if(window.innerWidth <= 480)
     {
         s2.style.background="#2b2a2a";
+       
         s2.style.transition="0.8s";
+    }
+    else{
+        home.style.backgroundImage="linear-gradient(105deg,rgb(30, 89, 251) 20%, #111 20%)";
     }
  
     sc=0;
@@ -67,6 +85,7 @@ tool.forEach(x=>{
         slide.forEach(y=>{
             y.style.display="none";
         })
-        slide[tool.indexOf(x)].style.display="block";
+        var st=tool.indexOf(x);
+        slide[st].style.display=slides[st];
     })
 })
