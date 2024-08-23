@@ -87,3 +87,12 @@ tool.forEach(x=>{
         slide[st].style.display=slides[st];
     })
 })
+
+
+// JavaScript to set height dynamically
+function setFullHeight() {
+  document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
+}
+
+window.addEventListener('resize', setFullHeight);
+window.addEventListener('load', setFullHeight);
