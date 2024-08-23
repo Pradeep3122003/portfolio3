@@ -1,0 +1,235 @@
+*{
+    padding:0px;
+    margin: 0px 0px;
+ }
+body{
+   
+    height: 100vh;
+    width: 100vw;
+  position: absolute;
+    background-color: #111;
+    overflow: hidden;
+}
+
+section{
+   height: 100vh;
+   width: 100vw;
+    background-color: #111;
+
+}
+#about{
+    background-color: blue;
+    display: none;
+}
+#proj{
+    background-color: aqua;
+    display: none;
+}
+#cont{
+    background-color: rgb(0, 255, 30);
+    display: none;
+}
+
+/* for pc */
+#sun{
+    width: calc(2.5vh + 2.5vw);
+    height: calc(2.5vh + 2.5vw);
+    background-color: rgb(85, 86, 86);
+    border-radius: 50%;
+    position: absolute;
+    margin-left: 95vw;
+    margin-top: 3vh;
+}
+.tool{
+    width: 6vw;
+    height: fit-content;
+    
+    position: absolute;
+    margin-top: 25vh;
+    margin-left: 94vw;
+    
+}
+
+.tool div{
+    width: calc(2.5vh + 2.5vw);
+    height: calc(2.5vh + 2.5vw);
+   border-radius: 50%;
+   background-color: rgb(81, 80, 80);
+   margin: 0 auto;
+   margin-top: 2vh;
+}
+/* home page pc */
+#home{
+    background-image: linear-gradient(105deg,rgb(251, 155, 30) 20%, #111 20%);
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 1fr;
+}
+.homep{
+    height: 60%;
+    width: 80%;
+    border-radius: 30px;
+    margin: 25% auto;
+    border: 1px solid silver;
+    background-image: url(me2.png);
+    background-position: top;
+    background-size: 100% 120%;
+}
+
+.n1, .n2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: calc(2.8vh + 2.8vw);
+    font-weight: 900;
+    text-shadow: 0px 1px 2px black;
+}
+
+.n1{
+    color: rgb(255, 174, 0);
+    margin-top: 15%;
+}
+.n2{
+    color: aliceblue;
+  
+}
+.des1{
+    color: azure;
+    margin:0vh auto;
+    margin-top: 2.5vh;
+    width: 60%;
+    font-size:calc(1vh + 1vw) ;
+    text-align: justify;
+}
+#home button{
+    display: block;
+    width: 15vw;
+    height: 6vh;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 2vh auto;
+    margin-top: 3vh;
+    border-radius: 30px;
+    background:none;
+    border: 1px solid rgb(234, 0, 255);
+    color: azure;
+}
+
+#home button:hover{
+    box-shadow: 0px 0px 10px 2px purple;
+    cursor: pointer;
+}
+
+ /* for mobile */
+@media screen and (max-width: 480px)
+{
+    body{
+   
+        height: 100vh;
+        width: 100vw;
+      position: absolute;
+        background-color: #111;
+        overflow: hidden;
+    }
+    section{
+        height: 100vh;
+        width: 100vw;
+        background-image: none;
+        border: none;
+    }
+
+    #home{
+        background-image: none;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 40% 8% 6% 23% 10%;
+       
+    }
+   
+
+    #sun{
+        width: calc(4.5vh + 4.5vw);
+        height: calc(4.5vh + 4.5vw);
+        background-color: rgb(85, 86, 86);
+        border-radius: 50%;
+        position: absolute;
+        margin-left: 80vw;
+        margin-top: 3vh;
+    }
+    .tool{
+        width: 100%;
+        height: 10vh;
+        background-color: #2b2a2a;
+        position: absolute;
+        margin-top: 90vh;
+        margin-left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0px 0px 8px 0px rgb(0, 0, 0);
+    }
+
+    .tool div{
+       height: 70%;
+       width: 13%;
+       border-radius: 50%;
+       background-color: rgb(81, 80, 80);
+       margin: 0 auto;
+    }
+
+    #container{
+        height: 100vh;
+        width: 100vw;
+        
+    }
+
+    /* home content */
+    .homep{
+        height: calc(20vh + 20vw);
+        width: calc(20vh + 20vw);
+        border-radius: 50%;
+        margin: 10vh auto;
+        border: 1px solid silver;
+    }
+
+    .n1, .n2{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        font-size: calc(2.8vh + 2.8vw);
+        font-weight: 900;
+    }
+
+    .n1{
+        color: rgb(255, 174, 0);
+        margin-top: 3vh;
+    }
+    .n2{
+        color: aliceblue;
+      
+    }
+    .des1{
+        color: azure;
+        margin:2vh auto;
+        font-size: large;
+        width: 80%;
+        text-align: justify;
+    }
+    #home button{
+        display: block;
+        width: 60%;
+        height: 80%;
+        font-size: 1.2em;
+        padding: calc(1vh + 1vw);
+        margin: 2vh auto;
+        border-radius: 30px;
+        background:none;
+        border: 1px solid gold;
+        color: azure;
+        font-weight: 500;
+    }
+}
+
+
