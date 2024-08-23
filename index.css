@@ -106,7 +106,7 @@ section{
     display: block;
     width: 15vw;
     height: 6vh;
-    font-size: 1.2em;
+    font-size:calc(1vh + 1vw);
     font-weight: 700;
     margin: 2vh auto;
     margin-top: 3vh;
