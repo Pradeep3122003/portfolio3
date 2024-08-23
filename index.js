@@ -29,7 +29,7 @@ if(sc==0)
            x.style.transition="0.8s";
            if(window.innerWidth > 480)
             {
-                home.style.backgroundImage="linear-gradient(105deg,rgb(30, 89, 251) 20%, #f6f4f4 20%)";
+                home.style.backgroundImage="linear-gradient(105deg,rgb(251, 155, 30) 20%, #f6f4f4 20%)";
                 home.style.transition="0.8s";
             }
 
@@ -55,7 +55,7 @@ else{
         x.style.background="black";
         if(window.innerWidth > 480)
             {
-                home.style.backgroundImage="linear-gradient(105deg,rgb(30, 89, 251) 20%, #111 20%)";
+                home.style.backgroundImage="linear-gradient(105deg,rgb(251, 155, 30) 20%, #111 20%)";
                 home.style.transition="0.8s";
             }
  });
@@ -65,9 +65,7 @@ else{
        
         s2.style.transition="0.8s";
     }
-    else{
-        home.style.backgroundImage="linear-gradient(105deg,rgb(30, 89, 251) 20%, #111 20%)";
-    }
+    
  
     sc=0;
 }
